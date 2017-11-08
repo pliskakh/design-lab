@@ -16,6 +16,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	line-height: 1.2;
 	letter-spacing: 0.16em;
+	margin-top: 0;
 }
 
 a,
@@ -29,12 +30,23 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	background-color: #3c3c3c;
+	height: 54px;
+	line-height: 54px;
+	color: #FFF;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	padding: 0 40px;
 }
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	background-color: #a2acc3;
 }
 
 input[type="text"],
@@ -175,12 +187,126 @@ textarea {
 }
 
 .ba-section--services {
-	background: #a0a8bd;
+	background: #a0a8bd url('../img/services.jpg') no-repeat 50% / cover;
 	color: #ffffff;
 }
 
+.ba-info-box {
+	padding-top: 53px;
+	padding-bottom: 50px;
+	font-size: 14px;
+	line-height: 1.85;
+}
 
+.ba-info-box:last-child {
+	padding-bottom: 60px;
+}
 
+.ba-info-box__title {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-top: 30px;
+	margin-bottom: 25px;
+}
+
+.visibility-hidden {
+	position: absolute !important;
+	clip: rect(1px,1px,1px,1px);
+}
+
+.ba-work {
+	display: block;
+	position: relative;
+}
+
+.ba-work img {
+	display: block;
+	width: 100%;
+}
+
+.ba-work__title {
+	position: absolute;
+	left: 48px;
+	bottom: 38px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 34px;
+	margin: 0;
+}
+
+.ba-width-29 {
+	width: 29%;
+}
+
+.ba-width-42 {
+	width: 42%;
+}
+
+.ba-grid--works {
+	margin-left: -10px;
+}
+
+.ba-grid--works {
+	margin-left: -10px;
+}
+
+.ba-grid--works + .ba-grid--works {
+	margin-top: 10px;
+}
+
+.ba-grid--works > [class*="ba-width-"] {
+	padding-left: 10px;
+}
+
+.ba-contact-modal {
+	display: block;
+	width: 100%;
+	max-width: 395px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cls-1, .cls-2 {
+	fill: none;
+	stroke-width: 2px;
+}
+
+.cls-1 {
+	stroke: currentColor;
+}
+
+.cls-1, .cls-2, .cls-3 {
+	fill-rule: evenodd;
+}
+
+.cls-2 {
+	stroke: currentColor;
+}
+
+.cls-3, .cls-4 {
+	fill: currentColor;
+}
+
+.ba-logo {
+	display: inline-block;
+	color: #FFF;
+}
+
+.ba-footer {
+	text-align: center;
+	padding-bottom: 65px;
+}
+
+.ba-footer-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 40px;
+	
+	width: 35px;
+	height: 37px;
+}
 
 
 
