@@ -119,6 +119,10 @@ textarea {
 	background: url('../img/scroll.svg');
 }
 
+.ba-scroll:hover {
+	opacity: 0.7;
+}
+
 .ba-section {
 	padding: 120px 0 110px;
 }
@@ -217,11 +221,17 @@ textarea {
 .ba-work {
 	display: block;
 	position: relative;
+	overflow: hidden;
 }
 
 .ba-work img {
 	display: block;
 	width: 100%;
+	transition: transform .3s;
+}
+
+.ba-work:hover img{
+	transform: scale(1.1);
 }
 
 .ba-work__title {
@@ -233,6 +243,15 @@ textarea {
 	text-decoration: none;
 	font-size: 34px;
 	margin: 0;
+	transition: transform .3s;
+}
+
+.ba-work:hover .ba-work__title{
+	transform: translateY(-100px);
+}
+
+.ba-work__title--small {
+	font-size: 30px;
 }
 
 .ba-width-29 {
@@ -266,6 +285,7 @@ textarea {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	border: none;
 }
 
 .cls-1, .cls-2 {
@@ -297,13 +317,14 @@ textarea {
 .ba-footer {
 	text-align: center;
 	padding-bottom: 65px;
+	font-size: 14px;
+	margin-top: -48px;
 }
 
 .ba-footer-logo {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 40px;
-	
 	width: 35px;
 	height: 37px;
 }
